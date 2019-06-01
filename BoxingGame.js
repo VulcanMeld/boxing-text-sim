@@ -1,6 +1,6 @@
 'use strict'
 
-const Boxer = (name, age, speed, power, defense) => {
+function Boxer  (name, age, speed, power, defense) {
 	this.name = name
 	this.age = age
 	this.speed = speed
@@ -22,7 +22,7 @@ const createRandomBoxer = () => {
 
 }
 
-const Round = () => {
+ function Round () {
 	this.scorecard = [0, 0]
 }  // 10 point must system. scorecard[0]=boxer 1 score
 
