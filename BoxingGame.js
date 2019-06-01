@@ -1,12 +1,13 @@
 'use strict'
 
-function Boxer  (name, age, speed, power, defense) {
-	this.name = name
-	this.age = age
-	this.speed = speed
-	this.power = power
-	this.defense = defense
-
+class Boxer {
+	constructor(name, age, speed, power, defense) {
+		this.name = name;
+		this.age = age;
+		this.speed = speed;
+		this.power = power;
+		this.defense = defense;
+	}
 }
 
 const createRandomNumber = (floor, ceiling) => {
@@ -22,9 +23,11 @@ const createRandomBoxer = () => {
 
 }
 
- function Round () {
-	this.scorecard = [0, 0]
-}  // 10 point must system. scorecard[0]=boxer 1 score
+class Round {
+	constructor() {
+		this.scorecard = [0, 0];
+	}
+}
 
 const initFight = (boxer1, boxer2) => {
 	boxer1.health = 100
